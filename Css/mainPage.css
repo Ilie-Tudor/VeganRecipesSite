@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    
+    --color1: cadetblue;
+    --footercolor: black;
+}
+
+
+
+/* content css */
+.content{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero-image-wrapper{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    min-height: 400px;
+    max-height: 700px;
+}
+.hero-background-image{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    justify-content: center;
+    object-fit: contain;
+}
+.hero-background-image img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-aux-wrapper{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hero-button{
+    position: relative;
+    width: 170px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    border-radius: 15px;
+    text-align: justify;
+    text-decoration: none;
+    margin: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110%;
+}
+.hero-button:hover{
+    text-decoration: none;
+    color: orangered;
+}
+
+
+.quote-wrapper{
+    position: relative;
+    width: 100%;
+}
+.quote-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background: #1e1e2c;
+    color: white;
+    font-size: 140%;
+    text-align: center;
+}
+.quote-text>p{
+    position: relative;
+    width: 98%;
+    padding: 0;
+    margin-bottom: 5px;
+    font-family: 'Merienda', cursive;
+}
+.quote-img-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.quote-img{
+    position: relative;
+    width: 50%;
+    
+}
+.quote-img>img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.content-wrapper{
+    position: relative;
+    width: 100%;
+}
+.section{
+    position: relative;
+    width: 100%;
+}
+#Section1-title{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px; 
+}
+#Section1-text{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px; 
+}
+/* end content css */
+
+
+
+
+@media screen and (max-width: 600px){
+
+    .quote-img-wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .quote-img{
+        position: relative;
+        width: 100%;
+        
+    }
+    #Section1-text{
+        font-size: 90%;
+    }
+
+}

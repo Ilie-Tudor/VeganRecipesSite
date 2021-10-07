@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    --color1: cadetblue;
+    --footercolor: black;
+    background: rgba(238, 237, 237, 0.753);
+}
+
+
+/* footer css */
+
+.footer{
+    position: relative;
+    width: 100%;
+}
+.footer-wrapper{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    background: var(--color1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.footer-section{
+    position: relative;
+    margin: 20px;
+    
+}
+.footer-section-title{
+    position: relative;
+    margin: 5px 10px;
+    font-size: 110%;
+    text-align: center;
+}
+.footer-section-text-wrapper{
+    position: relative;
+    display: flex;
+    margin: 5px 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer-section-text-wrapper a{
+
+    position: relative;
+    margin: 3px 20px;
+    text-align: center;
+    color: black;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 300%;
+    
+}
+.footer-section-text-wrapper a:hover{
+
+   text-decoration: none;
+   color: white; 
+}
+.footer-section-text-wrapper p{
+
+    position: relative;
+    margin: 3px 0;
+    text-align: center;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 300%;
+    
+}
+
+@media screen and (max-width: 425px){
+    .footer-section-text-wrapper a{
+
+        position: relative;
+        margin: 3px 20px;
+        text-align: center;
+        color: black;
+        font-family: 'Lovers Quarrel', cursive;
+        font-size: 200%;
+        
+    }
+    .footer-section-text-wrapper a:hover{
+    
+       text-decoration: none;
+       color: white; 
+    }
+    .footer-section-text-wrapper p{
+    
+        position: relative;
+        margin: 3px 0;
+        text-align: center;
+        font-family: 'Lovers Quarrel', cursive;
+        font-size: 200%;
+        
+    }
+
+}
+/* end footer css */
+
